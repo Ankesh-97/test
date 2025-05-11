@@ -1,0 +1,36 @@
+1.What is Spring Security And its purposes?
+
+> Spring Security is a powerful and customizable framework that provides authentication,
+  authorization, and security features for Java-based enterprise applications,
+  particularly those built with the Spring framework.
+> Purposes:
+   >Authenticate users: Ensure only legitimate users can access the application.
+   >Authorize actions: Control what authenticated users can or cannot do based on roles or permissions.
+   >Protect against common security vulnerabilities, such as csrf,xss
+> Common Spring Security Components
+  AuthenticationManager: Handles the authentication process.
+  SecurityContextHolder: Stores the security context for the current thread.
+  UserDetailsService: Fetches user details for authentication.
+  PasswordEncoder: Encodes passwords for secure storage.
+  SecurityFilterChain: Defines the sequence of security filters.
+
+2. How do you configure Spring Security in a Spring Boot application and use of
+@EnableWebSecurity and SecurityFilterChain
+
+> In a Spring Boot application, Spring Security is automatically enabled if you include the Spring Security
+dependency in your pom.xml or build.gradle. However, you often need to customize the default configuration.
+
+> Use Of @EnableWebSecurity:
+   >@EnableWebSecurity is used to enable Spring Security in a Spring Boot application.
+          @EnableWebSecurity
+          public class SecurityConfig{
+              // Custom security configuration
+          }
+
+  >Disables Spring Boot's default security configuration, allowing you to define your own rules.
+  >It is typically used with a class annotated with @Configuration.
+
+> Use of SecurityFilterChain:
+   >SecurityFilterChain is used to define the sequence of security filters in a Spring Security configuration.
+   >Each SecurityFilterChain consists of a series of security filters that process incoming requests.
+   >You can define multiple SecurityFilterChains for different paths or conditions.

@@ -1,0 +1,20 @@
+
+ ************************************************  Functional Interface   ************************************************
+
+ Questions to Answer
+
+    1. What is the functional interface?
+    2. What is Lambda Expression?
+    3. What is the purpose of the functional interface?
+    4. How to use functional interface with lambda expression?
+    5. Advantages of using functional interface?
+    6. Types of functional interfaces:
+       > Consumer
+       > Supplier
+       > Predicate
+       > Function
+          > UnaryOperator
+           > BinaryOperator
+
+    7. How to handle use cases when functional interface get extended from other interface(or functional interface)?
+

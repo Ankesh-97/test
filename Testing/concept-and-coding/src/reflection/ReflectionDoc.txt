@@ -1,0 +1,12 @@
+Reflection In java
+
+> It helps to get the meta data of a class at runtime.
+> It helps to inspect the fields, methods and constructors of a class.
+> It helps to invoke the methods of a class at runtime.
+> It helps to create a new instance of a class at runtime.
+> It helps to get and set the field values of an object at runtime.
+> It helps to get the annotations of a class at runtime.
+
+How reflection works in java
+> At run time jvm attaches a class object to each and every object. This class object contains all the meta data of the class.
+> By using this class object we can get the meta data of the class.

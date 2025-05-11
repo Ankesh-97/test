@@ -1,0 +1,38 @@
+                                   About Interfaces:
+1. An interface is a reference type, similar to a class, that can contain only constants,
+   method signatures, default methods, static methods, and nested types.
+2. Method bodies exist only for default methods and static methods.
+3. Interfaces cannot contain instance fields. The methods in interfaces also lack bodies.
+4. Interfaces define what a class must do, but not how it does it.
+5. It can also have nested interface.
+
+
+                                   Why we Need Interface:
+
+1. It is used to achieve total abstraction.
+2. By interface, we can support the functionality of multiple inheritance.
+3. It can be used to achieve loose coupling.
+4. It is used as data type for the classes which inherit the interfaces.
+
+
+                                      Points to Note(Default methods):
+
+1. When two interface is there and both have default method with same signature
+   then we need to override that method in the class which is implementing both the interfaces.
+2. If a interface extends another interface and parent has default method then child can make it abstract or override it.
+3. A interface can extend multiple interfaces.(When it extends then it is not mandatory to override
+   the default method of parent interface but if multiple interface contains same method then
+   we need to override the method int the extended interface).
+4. A class implementing the interface can override the default method of the interface.
+
+
+                                        Points to Note(Static methods):
+
+1. We can't override static method of interface in the implementing class.
+2. We can't access static method of interface using object reference.
+
+                                        Points to Note(Private methods):
+
+1.We can have private method in interface.
+2. We can't override private method of interface in the implementing class.
+

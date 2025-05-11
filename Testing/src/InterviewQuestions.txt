@@ -1,0 +1,126 @@
+# Java Interview Questions (Core Java, Streams, Serialization, Collections)
+
+## Core Java Questions
+
+1. What are the main principles of Object-Oriented Programming in Java?
+> Encapsulation, Abstraction, Inheritance, polymorphism
+2. Explain the difference between `==` and `.equals()` in Java.
+> First one helps u to compare whether two refrences pointing to same address or object.While
+latter one helps u to check whether the value present inside it is same for the two references.
+3. What is the difference between final, finally, and finalize?
+> final is keyword used for different purposes as per the entity, if variable then cannot referenced to any other value, method then cannot be overriden, if class cannot be inherited.
+4. How does exception handling work in Java? Explain checked vs unchecked exceptions.
+> Exception handling is used to handle the abrupt stop of running of java application by handling this behaviour through try catch block,
+there are two types checked and unchecked, first one is checked because it bubbles out before start of application and other one is unchecked because it cannot be checked before running the aplication.
+5. What is the difference between method overloading and method overriding?
+
+6. Explain the concept of Java interfaces and abstract classes. When would you use one over the other?
+
+7. What is the difference between String, StringBuilder, and StringBuffer?
+
+8. Explain the Java class loading mechanism.
+
+9. What is reflection in Java and how is it used?
+10. Explain static blocks and instance initialization blocks in Java.
+
+11. What are anonymous classes and when would you use them?
+
+12. How does the `volatile` keyword work in Java?
+
+13. What is the purpose of the `transient` keyword in Java?
+14. Explain the concept of pass-by-value in Java.
+15. What is autoboxing and unboxing in Java?
+
+## Java Streams Questions
+
+1. What are Java Streams and what problem do they solve?
+
+2. Explain the difference between intermediate and terminal operations in streams.
+
+3. What is the difference between `map()` and `flatMap()` operations?
+>listOfList.stream().flatMap(Collection :: stream).collect(Collectors.toList());
+4. How would you find the average of all numbers in a list using streams?
+list.stream().mapToInt(Integer :: intValue).average().orElse(0.0);
+list.stream().collect(Collectors.averagingInt(Integer :: intValue));
+5. Explain how to use streams to filter a collection based on multiple conditions.
+> list.stream().filter().filter().toList();
+6. How would you use streams to convert a list of objects to a map?
+> list.stream().collect(Collectors.toMap(Person::id, Function.identity()));
+> list.stream().collect(Collectors.groupingBy(Person:: dept, Collectors.averagingDouble()));
+7. What is a parallel stream and when would you use it?
+
+8. Explain the collect() method and its common collectors.
+
+9. How would you use streams to find the maximum value in a collection?
+list.stream().max(Comparator.naturalOrder());
+list.stream().max(Comparator.comapring(Person::age));
+10. What is the difference between `findFirst()` and `findAny()`?
+
+11. How would you implement custom sorting using streams?
+
+12. Explain the reduce operation and provide an example.
+ > list.stream().reduce((a,b)->a+b);
+13. How do you handle null values in streams?
+
+14. What are the limitations of using streams in Java?
+
+15. How would you group elements in a collection using streams?
+
+
+## Serialization Questions
+
+1. What is serialization in Java and why is it used?
+2. Explain the process of serialization and deserialization.
+3. What interfaces must be implemented for an object to be serializable?
+4. What is the significance of `serialVersionUID`?
+5. What happens if you don't define `serialVersionUID`?
+6. How does serialization handle inheritance?
+7. What fields are not serialized by default?
+8. How can you customize the serialization process?
+9. What are the security concerns with Java serialization?
+10. What are alternatives to Java's built-in serialization?
+11. How does serialization handle circular references?
+12. Explain the methods `writeObject()` and `readObject()`.
+13. What is Externalizable interface and how does it differ from Serializable?
+14. How would you serialize a singleton class?
+15. What is the impact of changing a class definition after objects have been serialized?
+
+## Collections Questions
+
+1. Explain the Java Collections Framework hierarchy.
+2. What is the difference between ArrayList and LinkedList?
+3. How does HashMap work internally? Explain its time complexity.
+4. What happens in case of a collision in HashMap?
+5. What is the difference between HashMap and ConcurrentHashMap?
+6. Explain the difference between Vector and ArrayList.
+7. What is the difference between Set and List?
+8. How does HashSet eliminate duplicates?
+9. What is the difference between TreeMap and HashMap?
+10. How would you create an immutable collection?
+11. What is the purpose of the Comparator and Comparable interfaces?
+12. Explain the fail-fast and fail-safe iterators.
+13. How would you sort a collection of custom objects?
+list.stream().sorted(Comparator.comapring(Person::age));
+14. What collections would you use for a queue implementation and why?
+
+15. How would you implement a thread-safe collection?
+
+16. What is the difference between enumeration and iterator?
+
+17. How does LinkedHashMap maintain insertion order?
+18. What is the purpose of the NavigableMap interface?
+19. Explain the difference between Stack and Queue.
+20. When would you use a CopyOnWriteArrayList?
+
+## Coding Challenges
+
+1. Write a program to reverse a string using streams.
+2. Implement a custom serialization for a class containing sensitive data.
+3. Write a program to find the second highest number in a list using streams.
+4. Implement a thread-safe singleton that is also serializable.
+5. Write a program to find duplicate elements in a list using streams.
+6. Implement a custom collection that allows only unique elements based on a specific property.
+7. Write a program to flatten a nested list using streams.
+8. Implement a deep copy of an object using serialization.
+9. Write a program to perform group by operations on a collection using streams.
+10. Implement a LRU cache using Java collections.

@@ -1,0 +1,65 @@
+# Spring Boot Questions
+
+1. What is Spring Boot and what are its main advantages?
+>
+2. Explain Spring Boot auto-configuration. How can you exclude specific auto-configurations?
+3. What is the difference between an embedded container and a WAR deployment?
+4. How do you externalize configuration in Spring Boot applications?
+5. What are Spring profiles and how would you use them?
+6. Explain the Spring Boot Actuator and its benefits.
+7. What is Spring Boot DevTools?
+8. How would you implement logging in a Spring Boot application?
+9. Explain the difference between @SpringBootApplication and @EnableAutoConfiguration.
+10. How do you handle exceptions globally in Spring Boot?
+
+# Spring JPA Questions
+
+1. What is Spring Data JPA? How does it simplify database operations?
+2. Explain the different types of repositories in Spring Data JPA.
+3. How do you define custom queries using method names in Spring Data JPA?
+4. What is the difference between findById() and getOne() methods?
+5. How do you implement pagination in Spring Data JPA?
+6. Explain the difference between @Query with JPQL vs. native queries.
+7. How do you map relationships (One-to-One, One-to-Many, Many-to-Many) in JPA?
+8. What is the purpose of @Transactional annotation? What isolation levels are available?
+9. How do you implement auditing in Spring Data JPA?
+10.Explain the different strategies for generating primary keys in JPA.
+
+# Hibernate Questions
+
+1. What is Hibernate and how does it relate to JPA?
+2. Explain the Hibernate architecture.
+3. What are the different states of an entity in Hibernate?
+4. Describe Hibernate's first-level and second-level caching mechanisms.
+5. How do you solve the N+1 query problem in Hibernate?
+6. What is the difference between lazy and eager loading? How do you configure them?
+7. Explain the difference between get() and load() methods in Hibernate.
+8. What are the different inheritance mapping strategies in Hibernate?
+9. How does Hibernate handle dirty checking?
+10. Explain optimistic vs. pessimistic locking in Hibernate.
+
+# Spring Security Questions
+
+1. What is Spring Security and what problems does it solve?
+2. Explain authentication vs. authorization in Spring Security.
+3. How would you implement custom authentication in Spring Security?
+4. What is the security filter chain and how does it work?
+5. How do you implement role-based authorization in Spring Security?
+6. Explain how to implement JWT authentication with Spring Security.
+7. What are the considerations for securing RESTful APIs?
+8. How do you handle CORS and CSRF in Spring Security?
+9. Explain OAuth2 integration with Spring Security.
+10. How do you implement method-level security in Spring applications?
+
+# Advanced/Integration Questions
+
+1. How would you design and implement a microservices architecture using Spring Boot?
+2. Explain your approach to testing Spring Boot applications.
+3. How do you handle database migrations in Spring Boot applications?
+4. Describe a challenging performance issue you've resolved in a Spring application.
+5. How do you monitor and troubleshoot Spring Boot applications in production?
+6. Explain your experience with Spring Cloud components (if any).
+7. How do you design for fault tolerance in distributed Spring applications?
+8. What strategies would you use to secure microservices communication?
+9. How would you implement caching in a Spring Boot application?
+10. Describe your approach to API documentation in Spring Boot applications.

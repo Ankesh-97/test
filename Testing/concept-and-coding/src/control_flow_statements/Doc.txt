@@ -1,0 +1,46 @@
+Control Flow statements
+
+Conditional statements
+
+Looping statements
+
+Branching statements( break, continue, return)
+
+
+Conditional statements
+
+> If statement > If-else statement > Nested if-else statement
+
+>Switch statement
+  > In switch we can put the default case at the beginning or at the end, but it will
+    always be executed at the end and if break statement is not used in the case then
+    it will execute all the cases after the default case.
+  > Data type supported by switch expression are byte, short, int, char, String, enum and  all wrapper classes of primitive type.
+  > In switch expression we can use the case statement as an expression and we can
+      use the case statement in the switch expression as a block of code.
+  > in below example we have have put variable x also in the case statement,
+      but it can be used only if it contains a constant value(used with final keyword).
+
+    e.g.
+    class Main{
+       psvm(){
+          final int x = 10;
+          switch(2+1+7){
+             case 2+1+7:
+                System.out.println("Case 1");
+                break;
+             case x:
+                System.out.println("Case 2");
+                break;
+             default:
+                System.out.println("Default");
+          }
+       }
+    }
+
+
+> Switch Expr
+  > Introduced in java 12
+  > Can return a value
+  > Must have default case
+  > No need for break statements

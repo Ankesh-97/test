@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_HEAP_SIZE" value="5000" />
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="quartz-job-scheduling" />
+        <module name="kafka-consumer" />
+        <module name="kafka-producer" />
+        <module name="Spring-boot" />
+        <module name="FunctionalInterface" />
+        <module name="MongoDBTest" />
+        <module name="code-quality-scan-project" />
+        <module name="spring-boot-jpa" />
+        <module name="Multithreading" />
+        <module name="jmx" />
+        <module name="spring-security-project" />
+        <module name="dummy-project" />
+        <module name="ecommerce" />
+        <module name="MongoDBProject" />
+        <module name="pdf-module" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="kafka-project" target="17" />
+      <module name="KafkaConsumer" target="17" />
+      <module name="pdf-generation-module" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="FunctionalInterface" options="-parameters" />
+      <module name="KafkaConsumer" options="-parameters" />
+      <module name="MongoDBProject" options="-parameters" />
+      <module name="MongoDBTest" options="-parameters" />
+      <module name="Multithreading" options="-parameters" />
+      <module name="Spring-boot" options="-parameters" />
+      <module name="code-quality-scan-project" options="-parameters" />
+      <module name="dummy-project" options="-parameters" />
+      <module name="ecommerce" options="-parameters" />
+      <module name="jmx" options="-parameters" />
+      <module name="kafka-consumer" options="-parameters" />
+      <module name="kafka-producer" options="-parameters" />
+      <module name="kafka-project" options="-parameters" />
+      <module name="pdf-generation-module" options="-parameters" />
+      <module name="pdf-module" options="-parameters" />
+      <module name="quartz-job-scheduling" options="-parameters" />
+      <module name="spring-boot-jpa" options="-parameters" />
+      <module name="spring-security-project" options="-parameters" />
+    </option>
+  </component>
+</project>

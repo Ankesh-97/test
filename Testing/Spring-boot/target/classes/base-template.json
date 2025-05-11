@@ -1,0 +1,283 @@
+{
+  "m360-template-config": {
+    "assets": [],
+    "styles": [
+      {
+        "selectors": [
+          "gjs-wrapper"
+        ],
+        "style": {
+          "display": "flex",
+          "flex-direction": "column",
+          "padding-top": "1rem",
+          "padding-right": "1rem",
+          "padding-bottom": "1rem",
+          "padding-left": "1rem",
+          "row-gap": "1rem",
+          "column-gap": "1rem"
+        },
+        "group": "cmp:wrapper"
+      },
+      {
+        "selectors": [],
+        "selectorsAdd": ":root",
+        "style": {
+          "--m360-rte-token_background-color": "#F5F5F5",
+          "--m360-rte-token_border": "1px solid #D9D9D9",
+          "--m360-rte-token_border-radius": "4px",
+          "--m360-rte-button_secondary-font-color": "#52C41A",
+          "--m360-rte-actions_popover-box-shadow": "0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05)",
+          "--m360-rte-token-dropdown_background-color": "#FFFFFF",
+          "--m360-rte-token-hover_background-color": "#F5F5F5",
+          "--m360-rte-delete-icon": "url('delete-icon.svg')",
+          "--m360-rte-edit-icon": "url('edit-icon.svg')"
+        }
+      },
+      {
+        "selectors": [],
+        "selectorsAdd": "[data-gjs-type]",
+        "style": {
+          "white-space-collapse": "preserve",
+          "text-wrap-mode": "wrap"
+        }
+      },
+      {
+        "selectors": [
+          "gjs-component-header"
+        ],
+        "style": {
+          "display": "inline-flex",
+          "width": "100%",
+          "background-image": "initial",
+          "background-position-x": "initial",
+          "background-position-y": "initial",
+          "background-size": "initial",
+          "background-repeat": "initial",
+          "background-attachment": "initial",
+          "background-origin": "initial",
+          "background-clip": "initial",
+          "background-color": "rgb(255, 255, 255)"
+        },
+        "group": "cmp:component-header"
+      },
+      {
+        "selectors": [],
+        "selectorsAdd": ".gjs-content:empty::after",
+        "style": {
+          "content": "\"Drag and drop content elements here\"",
+          "display": "flex",
+          "align-items": "center",
+          "justify-content": "center",
+          "opacity": "0.5",
+          "height": "100%"
+        },
+        "group": "cmp:content"
+      },
+      {
+        "selectors": [
+          "gjs-content"
+        ],
+        "style": {
+          "min-height": "50vh",
+          "height": "auto",
+          "display": "flex",
+          "flex-direction": "column",
+          "padding-top": "1rem",
+          "padding-right": "1rem",
+          "padding-bottom": "1rem",
+          "padding-left": "1rem",
+          "row-gap": "1rem",
+          "column-gap": "1rem"
+        },
+        "group": "cmp:content"
+      },
+      {
+        "selectors": [
+          "gjs-m360-content"
+        ],
+        "style": {
+          "display": "flex",
+          "flex-direction": "column",
+          "width": "100%",
+          "background-image": "initial",
+          "background-position-x": "initial",
+          "background-position-y": "initial",
+          "background-size": "initial",
+          "background-repeat": "initial",
+          "background-attachment": "initial",
+          "background-origin": "initial",
+          "background-clip": "initial",
+          "background-color": "rgb(255, 255, 255)"
+        },
+        "group": "cmp:m360-content"
+      },
+      {
+        "selectors": [],
+        "selectorsAdd": ".gjs-text:empty::after",
+        "style": {
+          "content": "\"Enter your text\"",
+          "display": "block",
+          "opacity": "0.3"
+        },
+        "group": "cmp:text"
+      },
+      {
+        "selectors": [
+          "gjs-text"
+        ],
+        "style": {
+          "pointer-events": "auto",
+          "border-top-width": "initial",
+          "border-right-width": "initial",
+          "border-bottom-width": "initial",
+          "border-left-width": "initial",
+          "border-top-style": "none",
+          "border-right-style": "none",
+          "border-bottom-style": "none",
+          "border-left-style": "none",
+          "border-top-color": "initial",
+          "border-right-color": "initial",
+          "border-bottom-color": "initial",
+          "border-left-color": "initial",
+          "border-image-source": "initial",
+          "border-image-slice": "initial",
+          "border-image-width": "initial",
+          "border-image-outset": "initial",
+          "border-image-repeat": "initial",
+          "outline-color": "initial",
+          "outline-style": "none",
+          "outline-width": "initial",
+          "cursor": "text"
+        },
+        "group": "cmp:text"
+      },
+      {
+        "selectors": [
+          "gjs-m360-text"
+        ],
+        "style": {
+          "pointer-events": "auto",
+          "width": "100%"
+        },
+        "group": "cmp:m360-text"
+      },
+      {
+        "selectors": [
+          "#i6n1"
+        ],
+        "style": {
+          "background": "#FFFFFF"
+        }
+      },
+      {
+        "selectors": [
+          "#ieutc"
+        ],
+        "style": {
+          "height": "100%",
+          "width": "100%",
+          "padding": "25px"
+        }
+      }
+    ],
+    "pages": [
+      {
+        "frames": [
+          {
+            "component": {
+              "type": "wrapper",
+              "stylable": [
+                "background",
+                "background-color",
+                "background-image",
+                "background-repeat",
+                "background-attachment",
+                "background-position",
+                "background-size"
+              ],
+              "classes": [
+                "gjs-wrapper"
+              ],
+              "components": [
+                {
+                  "type": "m360-content",
+                  "classes": [
+                    "gjs-m360-content"
+                  ],
+                  "components": [
+                    {
+                      "type": "component-header",
+                      "attributes": {
+                        "isComponentHeader": true,
+                        "parentType": "m360-content",
+                        "class": "gjs-component-header"
+                      },
+                      "components": []
+                    },
+                    {
+                      "type": "content",
+                      "classes": [
+                        "gjs-content"
+                      ],
+                      "attributes": {
+                        "contenteditable": false
+                      },
+                      "components": [
+                        {
+                          "type": "m360-text",
+                          "classes": [
+                            "gjs-m360-text"
+                          ],
+                          "attributes": {
+                            "id": "i6n1"
+                          },
+                          "components": [
+                            {
+                              "type": "component-header",
+                              "attributes": {
+                                "isComponentHeader": true,
+                                "parentType": "m360-text",
+                                "class": "gjs-component-header"
+                              },
+                              "components": []
+                            },
+                            {
+                              "type": "text",
+                              "classes": [
+                                "gjs-text"
+                              ],
+                              "attributes": {
+                                "contenteditable": true,
+                                "id": "ieutc"
+                              },
+                              "content": "{{content_}}"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "head": {
+                "type": "head"
+              },
+              "docEl": {
+                "tagName": "html"
+              }
+            },
+            "id": "QcY6wPDlol8EgIMU"
+          }
+        ],
+        "type": "main",
+        "id": "PSJejBrgIUmzpE6C"
+      }
+    ],
+    "symbols": [],
+    "dataSources": []
+  },
+  "m360-token-config": [],
+  "m360-custom-field-config": [],
+  "m360-html-config": "<div class=\"gjs-wrapper\"><span class=\"gjs-m360-content\"><div class=\"gjs-content\"><div class=\"gjs-m360-text\" id=\"i6n1\"><div contenteditable class=\"gjs-text\" id=\"ieutc\"></div></div></div></span></div>",
+  "m360-css-config": "* { box-sizing: border-box; } body {margin: 0;}.gjs-wrapper{display:flex;flex-direction:column;padding-top:1rem;padding-right:1rem;padding-bottom:1rem;padding-left:1rem;row-gap:1rem;column-gap:1rem;}:root{--m360-rte-token_background-color:#F5F5F5;--m360-rte-token_border:1px solid #D9D9D9;--m360-rte-token_border-radius:4px;--m360-rte-button_secondary-font-color:#52C41A;--m360-rte-actions_popover-box-shadow:0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);--m360-rte-token-dropdown_background-color:#FFFFFF;--m360-rte-token-hover_background-color:#F5F5F5;--m360-rte-delete-icon:url('delete-icon.svg');--m360-rte-edit-icon:url('edit-icon.svg');}[data-gjs-type]{white-space-collapse:preserve;text-wrap-mode:wrap;}.gjs-component-header{display:inline-flex;width:100%;background-image:initial;background-position-x:initial;background-position-y:initial;background-size:initial;background-repeat:initial;background-attachment:initial;background-origin:initial;background-clip:initial;background-color:rgb(255, 255, 255);}.gjs-content:empty::after{content:\"Drag and drop content elements here\";display:flex;align-items:center;justify-content:center;opacity:0.5;height:100%;}.gjs-content{min-height:50vh;height:auto;display:flex;flex-direction:column;padding-top:1rem;padding-right:1rem;padding-bottom:1rem;padding-left:1rem;row-gap:1rem;column-gap:1rem;}.gjs-m360-content{display:flex;flex-direction:column;width:100%;background-image:initial;background-position-x:initial;background-position-y:initial;background-size:initial;background-repeat:initial;background-attachment:initial;background-origin:initial;background-clip:initial;background-color:rgb(255, 255, 255);}.gjs-text:empty::after{content:\"Enter your text\";display:block;opacity:0.3;}.gjs-text{pointer-events:auto;border-top-width:initial;border-right-width:initial;border-bottom-width:initial;border-left-width:initial;border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;border-top-color:initial;border-right-color:initial;border-bottom-color:initial;border-left-color:initial;border-image-source:initial;border-image-slice:initial;border-image-width:initial;border-image-outset:initial;border-image-repeat:initial;outline-color:initial;outline-style:none;outline-width:initial;cursor:text;}.gjs-m360-text{pointer-events:auto;width:100%;}#i6n1{background:#FFFFFF;}#ieutc{height:100%;width:100%;padding:25px;}"
+}

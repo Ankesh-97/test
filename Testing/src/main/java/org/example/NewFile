@@ -1,0 +1,4 @@
+List<Integer> list1 = list.stream().sort((i1,i2)->i1.compareTo(i2)).collect(Collectors.toList());
+if(list1.size()>2){
+    System.out.println(list1.get(1));
+}

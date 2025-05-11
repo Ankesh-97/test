@@ -1,0 +1,14 @@
+org/example/plainJdbc/DatabaseConnection.class
+org/example/springdataJpa/UserDetailsRepository.class
+org/example/springdataJpa/UserDetailsController.class
+org/example/plainJdbc/PlainJdbc.class
+org/example/springbootJdbc/JpaApp.class
+org/example/springdataJpa/UserDetailsService.class
+org/example/springbootJdbc/UserRepository.class
+org/example/plainJdbc/JdbcController.class
+org/example/springdataJpa/UserDetails.class
+org/example/springbootJdbc/JpaController.class
+org/example/plainJdbc/UserDao.class
+org/example/springdataJpa/AppConfig.class
+org/example/springdataJpa/SpringDataJpaApp.class
+org/example/springdataJpa/CustomDatabaseConfig.class

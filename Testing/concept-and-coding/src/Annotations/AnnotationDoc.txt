@@ -1,0 +1,33 @@
+Annotation in java
+
+>It is kind of meta-data that can be used to provide information about the code in the program.
+>It can be used to provide information to the compiler, so that it can perform some special operations.
+>Annotation can be used to provide information to the compiler, so that it can perform some special operations.
+>Annotation can be used by the compiler to detect errors or suppress warnings.
+>It can also be used to generate code, XML files etc.
+
+>Annotation can be applied to classes, interfaces, methods, fields, parameters etc.
+
+Multiple Types of Annotation
+
+1. Java Defined Annotation
+2. Custom Annotation
+3. Meta Annotation(comes under point 1)
+
+Java Defined Annotation
+
+1. @Override
+2. @Deprecated
+3. @SuppressWarnings
+4. @SafeVarargs
+5. @FunctionalInterface
+6. @Native
+
+Meta Annotation
+
+1. @Retention(Here we can specify the retention policy of the annotation like SOURCE, CLASS, RUNTIME)
+2. @Target(Here we can specify the target of the annotation like TYPE, FIELD, METHOD,
+            PARAMETER, CONSTRUCTOR, LOCAL_VARIABLE, ANNOTATION_TYPE, PACKAGE)
+3. @Inherited(Here we can specify that the annotation can be inherited by the subclasses)
+4. @Documented(Here we can specify that the annotation should be documented by the javadoc tool)
+5. @Repeatable(Here we can specify that the annotation can be applied more than once to the same declaration)

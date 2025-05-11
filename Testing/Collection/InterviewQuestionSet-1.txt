@@ -1,0 +1,88 @@
+Here are some collection framework interview questions for a Java developer with 5 years of experience, including practical implementation questions:
+
+## Core Collection Framework Questions
+1. Explain the Collection hierarchy in Java
+2. Difference between ArrayList and LinkedList
+3. How does HashMap work internally?
+4. What is the difference between HashMap and ConcurrentHashMap?
+5. Explain fail-fast vs fail-safe iterators
+6. When would you use TreeMap over HashMap?
+
+
+Collection hierarchy in Java:
+> The Collection is inherited from iterable which is root interface of collection framework. There are several sub interface of collection like set, list, queue etc.
+> Map is not a sub interface of collection but it is part of collection framework.
+
+Arraylist vs linkedlist:
+> Arraylist is a collection which implicates the array data structure. Its index based access and faster when reading data from it. It is not synchronized and not thread safe.
+> Linkedlist is collection which implicates the linked list data structure. Its best option when you do not know how much it can grow or size is not fixed. It is not synchronized and not thread safe.
+
+How does HashMap work internally:
+> Hashmap is implementation of map interface. It stores data in key value format. Internally it creates node for each key-value insertion which is a wrapper class for key and value.
+>This node contains hashcode of key, key, value and next node reference. It uses hashcode to find the index in the array where it will store the node.
+> Initially when hashmap created it creates an array of size 16 and when the size of array crosses load factor (0.75) it doubles the size of array and rehashes the existing nodes to new array.
+> It uses linked list to store the nodes in case of collision. In case of more than treefy threshold nodes in a single index it converts the linked list to red black tree for better performance.
+
+HashMap vs ConcurrentHashMap:
+> HashMap is not synchronized and not thread safe. It can be used in single threaded environment or when you are sure that no other thread will access it.
+> ConcurrentHashMap is synchronized and thread safe. It can be used in multi-threaded environment. It uses lock striping technique to achieve concurrency.
+> It divides the map into segments and locks only the segment that is being accessed. This allows multiple threads to access different segments simultaneously.
+> It also uses a volatile variable to ensure visibility of changes made by one thread to other threads.
+> It does not allow null values and keys unlike hashmap which allows null values and keys.
+
+fail-fast vs fail-safe iterators:
+> Fail-fast iterators are designed to throw ConcurrentModificationException if the collection is modified while iterating over it. This is the default behavior of most collections like ArrayList, HashMap, etc.
+> Fail-safe iterators, on the other hand, do not throw ConcurrentModificationException. They work on a copy of the collection and allow modifications to the original collection while iterating. Examples include CopyOnWriteArrayList and ConcurrentHashMap.
+> Fail-safe iterators are generally slower than fail-fast iterators because they create a copy of the collection.
+
+ListIterator vs iterator:
+> ListIterator is a sub-interface of Iterator and is specifically designed for List collections. It allows bidirectional traversal of the list, meaning you can iterate both forwards and backwards.
+> ListIterator allows concurrent modification of the list while iterating unlike iterator which does not allow concurrent modification.
+> ListIterator also provides methods to add, remove, and replace elements in the list while iterating, which is not possible with a regular Iterator.
+
+When to use HashMap over TreeMap:
+
+> HashMap is generally preferred over TreeMap when:
+1. You do not need sorted order: HashMap does not maintain any order of its elements, while TreeMap sorts its elements based on their natural ordering or a custom comparator.
+2. Performance: HashMap has O(1) average time complexity for insertion, deletion, and access operations, while TreeMap has O(log n) time complexity due to its underlying red-black tree structure.
+
+## Implementation Questions
+1. Implement a custom cache with LRU (Least Recently Used) eviction policy using LinkedHashMap
+> LinkedHashMap<Integer,Integer> cache = new LinkedHashMap<>(capacity, 0.75f, true);
+
+2. Write a method to find the intersection of two collections efficiently
+> Set<Integer> intersection = new HashSet<>(collection1);
+3. Design a thread-safe counting semaphore using concurrent collections
+>
+4. Implement a frequency counter for words in a large text file.
+> We will use concurrent hash map to store the counter for each word.
+> To study large files will divide the file in chunks and each chunk should be passed in executor thread to be read by
+thread independently.
+5. Create a custom comparator to sort employees by multiple criteria.
+> employeesList.sort((e1,e2) -> {
+   int nameCompared = e1.getName().compareTo(e2.getName());
+   if(nameCompared != 0){
+      return nameCompared;
+   }
+   int ageCompared = e1.getAge().compare(e2.getAge());
+   if(ageCompared != 0){
+         return ageCompared;
+   }
+
+});
+6. Implement a method to detect cycles in a directed graph using collections
+
+
+## Advanced Questions
+1. How would you implement a composite key for HashMap?
+2. What are the performance implications of using CopyOnWriteArrayList?
+3. Explain synchronization options for collections and when to use each
+4. When might you implement a custom Collection class?
+5. How would you design a custom thread-safe collection?
+
+## Practical Scenario Questions
+1. How would you efficiently process a stream of transactions to find duplicates?
+2. Design a rate limiter using collections.
+3. Implement a system to track the top K most frequent elements in a data stream
+4. How would you design an efficient lookup structure for spatial data?
+5. Implement a directory tree walker with filtering capabilities

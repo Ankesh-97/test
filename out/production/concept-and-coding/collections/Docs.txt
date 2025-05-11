@@ -1,0 +1,10 @@
+JAVA Collection Framework (JCF)
+
+Why we need JCF:
+We already had few data structure like array, vector, hash tables for storing collections of elements but
+since do not have common interface for all these data structures, it was difficult to use them in a common way or
+remember all the methods of each data structure.
+
+Collection vs Collections
+> Collection is an interface which is used to represent a group of objects as a single entity.
+> Collections is a utility class which is used to define several utility methods for collection objects like sorting, searching etc.

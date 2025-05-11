@@ -1,0 +1,40 @@
+Exception in Java
+
+There is throwable(inherits Object class) class in Java which is the superclass of all errors and exceptions in Java.
+The Throwable class has two subclasses: Error and Exception.
+Errors are the problems that are not expected to be caught under normal circumstances by the application.
+Exceptions are the problems that can be caught and handled by the application.
+
+-> Errors in Java
+
+Error in java is something which we cannot handle.
+Circumstances in which Error occur :
+> out of memory error (When we create so many objects in heap memory)
+> Stack overflow error (When we call a method recursively without any exit condition)
+
+-> Exceptions in Java
+
+There are two type of exception java
+1. Checked Exception
+2. Unchecked Exception
+
+Checked Exception :
+
+Checked exceptions are type of exception that can be handled when our code is compiling.
+
+Circumstances in which Checked Exception occur :
+> FileNotFound Exception
+> IOException
+> SQLException
+
+Unchecked Exception :
+
+Unchecked exceptions are type of exception that cannot be handled when our code is compiling.
+This unchecked exception occur at runtime.
+Any exception which extends RuntimeException is unchecked exception.
+
+Circumstances in which Unchecked Exception occur :
+> ArrayIndexOutOfBoundException
+> NullPointerException
+> ArithmeticException
+

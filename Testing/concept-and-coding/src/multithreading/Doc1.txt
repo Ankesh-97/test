@@ -1,0 +1,49 @@
+Thread is the smallest unit that carries instruction to cpu to get it executed.
+Thread is also known as lightweight process.
+Thread uses less resources to create and exist in a process.
+Thread shares same memory space. Thread is used to increase application performance.
+Thread is used to perform multiple tasks at a time. Thread is used to perform background tasks.
+Thread is used to perform multitasking.
+
+Process memory Model includes (not shared by process as each process has their own memory allocated to them):
+(Below are the memory segments of a process which are shared among the threads of the process)
+1. Heap Memory(Dynamic memory allocation happens here)
+2. Code Segment(Machine code or executable code resides here)
+3. Data Segment(Global and static variables reside here)
+
+Thread memory Model includes (Not shared among threads, each thread owns its own memory):
+1. Program Counter
+2. Register Set
+3. Stack Memory
+
+----------------------------------------------------------------------------------------------------------------------------
+Thread class in java
+
+There are two ways to implements threads in java:
+1. By implementing Runnable interface
+2. By extending Thread class(internally it implements Runnable interface and its run method)
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+How AtomicInteger helps to achieve thread safety in java?
+
+-> To achieve concurrency control in java using atomicInteger or similar classes there concept called cas(compare and swap) is used.
+-> CAS is a hardware-supported method for implementing synchronization that is used to manage access to shared data.
+-> CAS is an atomic operation that reads a memory location, compares the value at that memory location to a given expected value,
+and, only if they are the same, modifies the memory location to a given new value.
+
+Is volatile keyword is used to achieve thread safety in java?
+
+> No volatile keyword is not used to achieve thread safety in java.
+> Volatile keyword is used to prevent thread caching of variables.
+> Volatile keyword is used to make sure that the variable is always read from the main memory and not from the thread cache.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Different types of Locks in java
+
+> ReentrantLock
+> ReadWriteLock( implemented by ReentrantReadWriteLock as concrete class)
+> StampedLock
+> Semaphore
