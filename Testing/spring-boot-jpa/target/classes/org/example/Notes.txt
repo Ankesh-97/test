@@ -1,0 +1,16 @@
+Limitation with plain jdbc:
+
+>Lots boiler plate code to handle exceptions, connections, statements, result sets, etc.
+>Need to write SQL queries manually.
+>Need to handle transactions manually.
+>Need to handle resource cleanup manually.
+>Need to handle connection pooling manually.
+>Need to handle thread safety manually.
+
+Spring JDBC Framework:
+
+>Spring JDBC framework is a powerful mechanism to connect to the database and execute SQL queries.
+>It internally uses JDBC api, but eliminates a lot of problems of JDBC API.
+>It makes the code easier to write, understand and maintain.
+>It provides a higher level of abstraction and eliminates the need for tedious code that you had to write using JDBC API.
+>It is a part of the Spring Framework.

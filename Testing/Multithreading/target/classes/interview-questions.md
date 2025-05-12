@@ -4,21 +4,68 @@
 
 1. **What is a thread in Java? How is it different from a process?**
 
+> Thread is a lightweight process that can carry the instruction to cpu to execute it.
+> Its different from process in multiple scenarios:
+  -> A process is a program in execution which has there independent memory and thread gets created in the process help the process to execute the instructions present in the process.
+  -> A process can have multiple thread running and each thread has their own stack memory, register, program counter.
+
 2. **Explain the lifecycle of a thread in Java.**
+
+-> A thread has following lifecycle in following step:
+  -> New - Thread gets created but not started
+  -> start - Thread is started and enters runnable state
+  -> Runnable - Thread waiting on cpu time get the instruction to execute
+  -> Running - Thread is executing the instruction
+  -> Blocked - Waiting to get the lock on the object or waiting for the resource to be free
+  -> timed waiting - Thread is waiting for a specific time to get the resource or lock
+  -> waiting - Thread is waiting for another thread to perform a specific action (wait <-> notify, notifyAll) 
+  -> Terminated - Thread has completed its execution and is no longer alive
+
 
 3. **What are the different ways to create a thread in Java?**
 
+ -> There two ways to create thread :
+  -> Extending the Thread class
+  -> Implementing the Runnable interface
+
 4. **What is the difference between `start()` and `run()` methods?**
 
+  -> start() -> This method helps the thread to bring in runnable state.
+  -> run() -> This method is used to define the set of execution the thread will execute.
+
 5. **Explain the concept of thread priorities in Java.**
+  -> We can add priority to a thread while creating it, with a set of defined priority in integer format.
+  -> But to run thread in priority it is not guranteed by jvm. It depends on following
+  -> The JVM implementation
+  -> The underlying operating system
+  -> The thread scheduling algorithm
 
 6. **What is thread synchronization? Why is it important?**
+  -> As the word synchronisation implicates things to be in sync. As we know thread has access to common heap
+   memory of process it belongs where all the objects gets stored at runtime and when a 
+   thread make some change it keeps in there local stack memory which is not visible to other threads so this can lead to 
+   unexpected alteration in the data. So to avoid this we need to synchronise the thread.
 
 7. **Explain the concept of deadlock. How can it be prevented?**
+ 
+ -> Deadlock is a situation where two or more threads are blocked forever, waiting for each other to release the locks. 
+  -> It can be prevented by following:
+  -> Avoiding circular wait
+  -> Using a timeout
+  -> Using a lock hierarchy
+  -> Using tryLock() method 
 
 8. **What is thread starvation?**
+  
+-> When a thread get blocked for a long time and not able to get the lock on the object it is waiting for, this is called thread starvation.
 
 9. **What are daemon threads? How are they different from user threads?**
+ -> Daemon are special type threads which runs in background to achieve any task and once all the user created 
+    gets terminated then daemon threads also gets terminated.
+ -> They are different from user threads in following ways:
+  -> Daemon threads are low priority threads
+  -> Daemon threads do not prevent the JVM from exiting when the program finishes
+  -> Daemon threads are used for background tasks, such as garbage collection or monitoring
 
 10. **Explain the `synchronized` keyword in Java.**
 
@@ -28,9 +75,19 @@
 
 13. **Explain the `volatile` keyword and its use in multithreading.**
 
+-> volatile is a keyword that is used with the variables to make them visible their chnages across threads by 
+   storing the change in main memory intead of thread local memory. BUt doesnot gurantee the compund operation to be atomic.
+    So it is not a replacement for synchronisation.
+
 14. **What is a ThreadLocal variable?**
+-> A ThreadLocal variable in Java provides thread-confined storage where each thread has its own independent copy of 
+   the variable. This allows threads to use and modify their own version without affecting other threads.
+
 
 15. **What is a race condition? How can it be prevented?**
+
+-> When two threads compete or try to access the same resource then this situtation of racing to get the resource is called race condition.
+   and one of the thread write the field and that leads to abrupt changes in the resource.
 
 16. **Explain the concept of thread safety in Java.**
 

@@ -1,0 +1,28 @@
+Why Spring framework came into picture:
+=======================================
+> Earlier for java backend application we used have servlets class which accepts the
+request and process the request and send the response back to the client.
+> And these servlets were managed by the servlet container like tomcat, weblogic, websphere etc.
+> And also we need to register the servlets in the web.xml file, which becomes a headache when we have lot of
+servlets or when we have to change the servlets frequently.
+
+> So to overcome these problems Spring framework came into picture.
+
+Spring framework:
+
+> Why Spring framework came into picture:
+=======================================
+> In spring framework also we have servlets serving behind the scenes, but we don't have to write the servlets class and also there is no
+web.xml file to configure these servlets, instead annotation came into picture.
+> And also dependency injection came into picture, which makes the code loosely coupled and easy to maintain.
+> And also spring framework provides lot of modules like spring core, spring mvc, spring boot, spring data, spring security etc.
+> But still servlet container does exist where we need to deploy our application.
+> Also dependency added in spring has issue in maintaining the versions of the jars.
+> And also we need to write the configuration files like applicationContext.xml, dispatcher-servlet.xml etc.
+
+>Why Spring boot came into picture:
+=======================================
+> So to overcome these problems Spring boot came into picture.
+> Spring boot comes with inbuilt tomcat server, so we don't have to deploy our application in the servlet container.
+> And also spring boot comes with inbuilt dependency management, so we don't have to worry about the versions of the jars.
+> And also spring boot comes with inbuilt configuration, so we don't have to write the configuration files.
