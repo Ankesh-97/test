@@ -1,0 +1,7 @@
+Points To Consider:
+> When we have situation of inheritance and two or more child can have
+duplicate functionality then we should consider the approach of strategy design pattern.Here if we see that driving strategy
+of a vehicle can be same for two or more so for every possible driving we created a class and then which child wants to use it can use as has a relation ship.
+
+> Use the Strategy Pattern over inheritance when you want to vary an object’s behavior dynamically,
+ avoid code duplication, and keep your codebase flexible and maintainable.

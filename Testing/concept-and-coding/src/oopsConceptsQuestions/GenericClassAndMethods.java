@@ -1,6 +1,5 @@
 package oopsConceptsQuestions;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /*
@@ -16,13 +15,13 @@ public class GenericClassAndMethods{
         List<String> list = List.of("String");
     }
 
-    public static void method1(List<T extends Number> list1, List<T extends Number> list2){
-
-    }
-
-    public static <? extends Number> method2(List<? extends Number> list1, List<? extends Number> list2){
-          return new ArrayList<Integer>();
-    }
+//    public static void method1(List<T extends Number> list1, List<T extends Number> list2){
+//
+//    }
+//
+//    public static <? extends Number> method2(List<? extends Number> list1, List<? extends Number> list2){
+//          return new ArrayList<Integer>();
+//    }
 
 
 }
