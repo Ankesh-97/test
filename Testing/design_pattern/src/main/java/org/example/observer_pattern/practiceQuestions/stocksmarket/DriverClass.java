@@ -1,6 +1,6 @@
-package src.design_patterns.observer_pattern.practiceQuestions.stocksmarket;
+package org.example.observer_pattern.practiceQuestions.stocksmarket;
 
-import src.design_patterns.observer_pattern.practiceQuestions.weatherstation.Subject;
+import org.example.observer_pattern.practiceQuestions.weatherstation.Subject;
 
 public class DriverClass {
 

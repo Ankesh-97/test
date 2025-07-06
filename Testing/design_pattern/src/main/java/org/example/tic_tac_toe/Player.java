@@ -1,4 +1,4 @@
-package src.design_patterns.tic_tac_toe;
+package org.example.tic_tac_toe;
 
 public class Player {
     private String name;

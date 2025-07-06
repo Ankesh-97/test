@@ -1,4 +1,4 @@
-package design_patterns.decorator_pattern.practiceQuestion.NotificationSystem;
+package org.example.practiceQuestion.NotificationSystem;
 
 public class SmsNotifier extends NotifierProvider {
     protected SmsNotifier(Notifier notifier) {

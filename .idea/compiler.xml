@@ -9,6 +9,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="quartz-job-scheduling" />
+        <module name="design_pattern" />
         <module name="kafka-consumer" />
         <module name="kafka-producer" />
         <module name="Spring-boot" />
@@ -26,6 +27,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="concept-and-coding" target="17" />
       <module name="kafka-project" target="17" />
       <module name="KafkaConsumer" target="17" />
       <module name="pdf-generation-module" target="17" />
@@ -40,6 +42,7 @@
       <module name="Multithreading" options="-parameters" />
       <module name="Spring-boot" options="-parameters" />
       <module name="code-quality-scan-project" options="-parameters" />
+      <module name="concept-and-coding" options="-parameters" />
       <module name="dummy-project" options="-parameters" />
       <module name="ecommerce" options="-parameters" />
       <module name="jmx" options="-parameters" />

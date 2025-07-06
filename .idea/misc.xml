@@ -12,6 +12,8 @@
         <option value="$PROJECT_DIR$/code-quality-scan-project/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/commercetools/pom.xml" />
+        <option value="$PROJECT_DIR$/Testing/concept-and-coding/pom.xml" />
+        <option value="$PROJECT_DIR$/Testing/design_pattern/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

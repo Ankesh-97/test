@@ -1,7 +1,7 @@
-package src.design_patterns.observer_pattern.practiceQuestions.stocksmarket;
+package org.example.observer_pattern.practiceQuestions.stocksmarket;
 
 
-import src.design_patterns.observer_pattern.practiceQuestions.weatherstation.Observer;
+import org.example.observer_pattern.practiceQuestions.weatherstation.Observer;
 
 public class StockMarketObserver implements Observer {
     @Override

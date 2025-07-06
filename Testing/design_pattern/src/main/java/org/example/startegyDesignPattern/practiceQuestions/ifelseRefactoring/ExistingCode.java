@@ -1,4 +1,4 @@
-package src.design_patterns.startegyDesignPattern.practiceQuestions.ifelseRefactoring;
+package org.example.startegyDesignPattern.practiceQuestions.ifelseRefactoring;
 
 public class ExistingCode {
     public static void main(String[] args) {

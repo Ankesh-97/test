@@ -1,6 +1,6 @@
-package src.design_patterns.observer_pattern.observer;
+package org.example.observer_pattern.observer;
 
-import src.design_patterns.observer_pattern.observable.AnyStationObservable;
+import org.example.observer_pattern.observable.AnyStationObservable;
 
 public class MobileDeviceObserver implements AnyDeviceObserver {
 

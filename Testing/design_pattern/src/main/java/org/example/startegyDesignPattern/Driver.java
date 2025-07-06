@@ -1,4 +1,4 @@
-package src.design_patterns.startegyDesignPattern;
+package org.example.startegyDesignPattern;
 
 public class Driver {
 

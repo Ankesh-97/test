@@ -7,6 +7,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.1.0</version>
+        <relativePath></relativePath>
     </parent>
 
     <artifactId>spring-security-project</artifactId>

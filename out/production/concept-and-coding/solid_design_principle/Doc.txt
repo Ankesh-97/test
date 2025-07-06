@@ -1,0 +1,16 @@
+Why we  need Solid design principle:
+
+1. To make the software more maintainable, flexible and scalable.
+2. To make the software more understandable.
+3. To make the software more testable.
+4. To make the software more robust.
+
+SOLID design principles are the key to building software that is easy to maintain and extend.
+They are a set of five principles that help developers build software that is easy to maintain and extend.
+These principles are:
+
+1. Single Responsibility Principle (SRP)
+2. Open/Closed Principle (OCP)
+3. Liskov Substitution Principle (LSP)
+4. Interface Segregation Principle (ISP)
+5. Dependency Inversion Principle (DIP)

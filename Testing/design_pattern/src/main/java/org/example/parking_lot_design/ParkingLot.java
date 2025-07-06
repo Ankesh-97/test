@@ -1,4 +1,4 @@
-package src.design_patterns.parking_lot_design;
+package org.example.parking_lot_design;
 
 public class ParkingLot {
 

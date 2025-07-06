@@ -1,4 +1,4 @@
-package src.design_patterns.observer_pattern.observer;
+package org.example.observer_pattern.observer;
 
 public interface AnyDeviceObserver extends Observer{
 

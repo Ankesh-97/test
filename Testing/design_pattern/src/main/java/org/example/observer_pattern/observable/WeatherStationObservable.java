@@ -1,6 +1,6 @@
-package src.design_patterns.observer_pattern.observable;
+package org.example.observer_pattern.observable;
 
-import src.design_patterns.observer_pattern.observer.AnyDeviceObserver;
+import org.example.observer_pattern.observer.AnyDeviceObserver;
 
 import java.util.ArrayList;
 import java.util.List;

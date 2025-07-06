@@ -1,0 +1,52 @@
+1. Java & Spring Boot
+Core Java (OOP, Collections, Streams, Concurrency)
+Java 17 features
+Spring Boot fundamentals (annotations, dependency injection, configuration)
+Spring Boot 3.x features and migration
+Spring Data JPA and Hibernate
+Spring Security basics (if used)
+Spring Boot testing (JUnit, Mockito)
+
+2. Microservices Architecture
+Designing and deploying microservices
+Inter-service communication (REST, messaging)
+Service discovery, configuration management
+API versioning and documentation (OpenAPI/Swagger)
+
+3. Cloud & DevOps
+Docker (writing and optimizing Dockerfiles)
+CI/CD concepts (semantic-release, deployment scripts)
+AWS SDK usage (S3, other services)
+Monitoring and logging (Spring Actuator, custom logging)
+
+4. Databases & Data Pipelines
+PostgreSQL (as per Hibernate dialect)
+FlywayDB for database migrations
+Data ingestion and ETL concepts
+Trino (distributed SQL query engine, if used)
+
+5. Distributed Systems & Messaging
+Messaging systems (Kafka, RabbitMQ, or custom)
+Temporal (workflow orchestration, if used)
+Caching strategies (Redis, in-memory, etc.)
+
+6. Security
+Authentication/Authorization (JWT, OAuth, Auth0)
+Secure configuration management (Spring Vault)
+OWASP security practices
+
+7. Testing & Quality
+Unit, integration, and end-to-end testing
+Test support libraries and best practices
+Code review and contribution guidelines
+
+8. Other Technologies
+Apache POI (Excel file handling)
+Bouncy Castle (cryptography)
+Stripe (payment gateway integration, if relevant)
+SendGrid (email service integration)
+9. General Software Engineering
+Design patterns (Singleton, Factory, etc.)
+Clean code and SOLID principles
+Version control (Git, branching strategies)
+Maven (multi-module project management)

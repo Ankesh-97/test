@@ -1,4 +1,4 @@
-package design_patterns.decorator_pattern.practiceQuestion.inputstream;
+package org.example.practiceQuestion.inputstream;
 
 import java.io.FileNotFoundException;
 

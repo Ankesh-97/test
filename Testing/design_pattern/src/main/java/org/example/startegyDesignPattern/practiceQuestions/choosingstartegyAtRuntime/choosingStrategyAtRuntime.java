@@ -1,4 +1,4 @@
-package src.design_patterns.startegyDesignPattern.practiceQuestions.choosingstartegyAtRuntime;
+package org.example.startegyDesignPattern.practiceQuestions.choosingstartegyAtRuntime;
 
 public class choosingStrategyAtRuntime {
     public static void main(String[] args) {

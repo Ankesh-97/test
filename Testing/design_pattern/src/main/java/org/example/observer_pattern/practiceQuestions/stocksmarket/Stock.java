@@ -1,4 +1,4 @@
-package src.design_patterns.observer_pattern.practiceQuestions.stocksmarket;
+package org.example.observer_pattern.practiceQuestions.stocksmarket;
 
 
 public class Stock {

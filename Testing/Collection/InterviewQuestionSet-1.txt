@@ -50,9 +50,9 @@ When to use HashMap over TreeMap:
 1. Implement a custom cache with LRU (Least Recently Used) eviction policy using LinkedHashMap
 > LinkedHashMap<Integer,Integer> cache = new LinkedHashMap<>(capacity, 0.75f, true);
 
-2. Write a method to find the intersection of two collections efficiently
+2.Write a method to find the intersection of two collections efficiently
 > Set<Integer> intersection = new HashSet<>(collection1);
-3. Design a thread-safe counting semaphore using concurrent collections
+3.Design a thread-safe counting semaphore using concurrent collections
 >
 4. Implement a frequency counter for words in a large text file.
 > We will use concurrent hash map to store the counter for each word.

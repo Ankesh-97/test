@@ -1,4 +1,4 @@
-package src.design_patterns.startegyDesignPattern.practiceQuestions.sortingstartegy;
+package org.example.startegyDesignPattern.practiceQuestions.sortingstartegy;
 
 public class BubbleSortStrategy implements SortingStrategyInterface {
 

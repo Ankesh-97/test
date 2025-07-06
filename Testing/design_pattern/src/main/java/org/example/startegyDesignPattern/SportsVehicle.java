@@ -1,4 +1,4 @@
-package design_patterns.startegyDesignPattern;
+package org.example.startegyDesignPattern;
 
 public class SportsVehicle extends Vehicle {
 

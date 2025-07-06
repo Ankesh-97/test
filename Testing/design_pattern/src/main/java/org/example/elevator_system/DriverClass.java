@@ -1,4 +1,4 @@
-package src.design_patterns.elevator_system;
+package org.example.elevator_system;
 
 public class DriverClass {
     public static void main(String[] args) {

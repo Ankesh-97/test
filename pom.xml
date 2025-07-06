@@ -17,6 +17,7 @@
         <module>kafka-consumer</module>
         <module>pdf-module</module>
         <module>Testing/quartz-job-scheduling</module>
+        <module>dummy-project</module>
     </modules>
     <properties>
         <maven.compiler.target>17</maven.compiler.target>

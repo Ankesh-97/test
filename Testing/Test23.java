@@ -4,14 +4,14 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
+import java.util.concurrent.Callable;
 
 public class Test23 {
 
     public static void main(String[] args) {
 
-        System.out.println(UUID.randomUUID());
-        System.out.println(UUID.randomUUID());
-        System.out.println(UUID.randomUUID());
+        Thread t1 = new Thread();
+        t1.start();
 
 
     }

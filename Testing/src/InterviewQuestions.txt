@@ -59,7 +59,7 @@ list.stream().max(Comparator.comapring(Person::age));
 11. How would you implement custom sorting using streams?
 
 12. Explain the reduce operation and provide an example.
- > list.stream().reduce((a,b)->a+b);
+ > list.stream().reduce(0,(a,b)->a+b);
 13. How do you handle null values in streams?
 
 14. What are the limitations of using streams in Java?

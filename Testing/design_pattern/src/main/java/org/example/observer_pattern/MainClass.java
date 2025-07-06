@@ -1,4 +1,4 @@
-package src.design_patterns.observer_pattern;
+package org.example.observer_pattern;
 
 public class MainClass extends Thread implements Runnable {
 

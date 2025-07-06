@@ -1,4 +1,4 @@
-package src.design_patterns.startegyDesignPattern.practiceQuestions.PaymentStartegy;
+package org.example.startegyDesignPattern.practiceQuestions.PaymentStartegy;
 
 public class PayPalPaymentStrategy implements PaymentStrategy {
     private String email;

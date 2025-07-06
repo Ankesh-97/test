@@ -1,4 +1,4 @@
-package design_patterns.decorator_pattern.practiceQuestion.TextEditor;
+package org.example.practiceQuestion.TextEditor;
 
 public class BoldDecorator extends TextDecorator {
 

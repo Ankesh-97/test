@@ -1,4 +1,4 @@
-package src.design_patterns.decorator_pattern.practiceQuestion.CoffeeMachine;
+package org.example.practiceQuestion.CoffeeMachine;
 
 public class EspressoCoffee implements Coffee {
     @Override

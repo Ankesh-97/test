@@ -1,4 +1,4 @@
-package src.design_patterns.observer_pattern.practiceQuestions.weatherstation;
+package org.example.observer_pattern.practiceQuestions.weatherstation;
 
 import java.util.ArrayList;
 import java.util.List;

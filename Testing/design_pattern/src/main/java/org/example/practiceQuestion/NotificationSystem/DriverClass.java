@@ -1,4 +1,4 @@
-package design_patterns.decorator_pattern.practiceQuestion.NotificationSystem;
+package org.example.practiceQuestion.NotificationSystem;
 
 public class DriverClass {
     public static void main(String[] args) {

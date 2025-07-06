@@ -1,0 +1,95 @@
+Java & Spring Boot
+What are the key features introduced in Java 17, and how do they benefit enterprise applications?
+Explain the role of the @SpringBootApplication annotation. What does it enable by default?
+How does dependency injection work in Spring, and what are the different ways to inject dependencies?
+What is the purpose of the @ComponentScan annotation, and how is it used in your project?
+How does Spring Boot handle configuration management, and what are the best practices for managing sensitive configuration values?
+Describe how you would implement and test a scheduled task in Spring Boot.
+What is the difference between @Service, @Component, and @Repository annotations?
+How does Spring Boot auto-configuration work?
+How do you handle exception management in a Spring Boot REST API?
+What is the use of ApplicationContextAware and where is it used in your project?
+How do you manage application startup and shutdown logic in Spring Boot?
+
+Microservices & Distributed Systems
+How does Kubernetes provide service discovery for microservices, and how does your project leverage this?
+What are the advantages and disadvantages of using static service endpoints versus dynamic service discovery?
+How do you ensure secure and reliable inter-service communication in a microservices architecture?
+What is the role of Docker in your deployment pipeline, and what are some best practices for writing Dockerfiles for Java applications?
+How do you handle versioning and backward compatibility in your APIs?
+What strategies do you use for monitoring and logging in a distributed system?
+How do you handle failures and retries in inter-service communication?
+What is a service mesh, and would it be beneficial for your architecture?
+How do you manage scaling and load balancing for your services?
+How do you ensure data consistency across microservices?
+
+Configuration & Secrets Management
+How are environment variables and Kubernetes secrets used to manage configuration in your project?
+What are the risks of hardcoding sensitive information, and how does your project mitigate these risks?
+Explain how Spring profiles can be used to manage different configurations for development, testing, and production.
+How do you externalize configuration in a Spring Boot application?
+What is the difference between @Value, @ConfigurationProperties, and Environment in Spring?
+How do you handle secret rotation and updates in a running application?
+What tools or services can be used for centralized configuration management?
+How do you validate configuration values at startup?
+
+Database & Data Management
+What is FlywayDB, and how is it used for database migrations in your project?
+How does Spring Data JPA simplify database access, and what are some common pitfalls to avoid?
+Describe the multi-tenant architecture in your project. How is tenant data isolated and managed?
+How do you handle database connection pooling and performance tuning?
+What are the pros and cons of using ORM frameworks like Hibernate?
+How do you manage schema changes in production environments?
+How do you ensure data integrity and consistency in a distributed system?
+What strategies do you use for database backup and disaster recovery?
+How do you handle large data imports/exports efficiently?
+
+Cloud & AWS Integration
+How does your project interact with AWS services (e.g., S3, Route53), and what libraries or SDKs are used?
+Describe the process of creating and deleting DNS records using AWS Route53 from your application.
+How do you manage AWS credentials and permissions securely?
+What are IAM roles and how do you use them in your deployment?
+How do you monitor and troubleshoot AWS service integrations?
+What is the difference between AWS SDK v1 and v2 for Java?
+How do you handle failures or retries when calling AWS services?
+How do you use AWS S3 for file storage and retrieval in your application?
+
+Security
+How is authentication and authorization handled in your project?
+What are some common security vulnerabilities in Spring Boot applications, and how do you address them?
+How do you manage and rotate cryptographic keys and secrets in a cloud-native environment?
+What is JWT, and how is it used for securing APIs?
+How do you implement role-based access control in your services?
+How do you protect sensitive endpoints and data in your APIs?
+What is CSRF and how do you prevent it in a Spring Boot application?
+How do you audit and log security-related events?
+
+Testing & Quality
+What testing frameworks are used in your project, and how do you structure your tests?
+How do you mock external dependencies (e.g., AWS, databases) in your tests?
+What is the purpose of the commons-test-support module?
+How do you perform integration testing for microservices?
+What is the difference between unit, integration, and end-to-end tests?
+How do you ensure code coverage and quality in your CI pipeline?
+How do you test scheduled tasks and background jobs?
+How do you handle flaky or non-deterministic tests?
+
+DevOps & CI/CD
+How does your project automate builds, tests, and deployments?
+What is semantic-release, and how does it help in managing releases and versioning?
+Describe a typical CI/CD pipeline for your project.
+How do you manage multi-module Maven builds in CI?
+How do you handle rollbacks and hotfixes in production?
+What are some best practices for writing deployment scripts?
+How do you manage Docker image versions and registries?
+How do you ensure zero-downtime deployments?
+
+General Software Engineering
+What design patterns are commonly used in your codebase, and why?
+How do you ensure code quality and maintainability in a large monorepo?
+What is the role of Maven in your project, and how do you manage dependencies across multiple modules?
+How do you handle code reviews and enforce coding standards?
+What is the SOLID principle, and how do you apply it in your code?
+How do you manage technical debt in a fast-growing codebase?
+How do you onboard new developers to a large project like this?
+What is the difference between a monorepo and a polyrepo, and what are the trade-offs?
